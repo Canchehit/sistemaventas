@@ -1,3 +1,6 @@
+package Categorias;
+
+import Modelo.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -27,7 +30,7 @@ public class categorias {
               break;
               case 7: producto="monster energy";
               break;
-              default: producto="No corresponde a ningun dia";
+              default: producto="No corresponde a ningun producto";
               break;
           }
           System.out.println("El producto escogido es:"+ producto);
