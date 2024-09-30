@@ -4,7 +4,7 @@ package Alta;
 
 
 
-import *;
+
 import java.util.Scanner;
 
 public class alta {
@@ -36,30 +36,45 @@ public class alta {
               default: 
               System.out.println("No corresponde a ningun producto");
               break;
-            
+            }
               
          // Este gurpo de comandos es para que el usuario ingrese un descripccion     
            System.out.println("selecciona el producto" + producto);
             
            System.out.println("Ingresa la Descripcción");
-           String descripccion = scanner nextLine();  
+           String descripccion = sc nextLine();  
         System.out.println("Descripción: " + descripccion);   
               
        //Este grupo de comandos es para que el usuario ingrese una nueva caracteristica 
            System.out.println("Ingresa la caracteristica");
-           String caracteristica = scanner nextLine();
-      
+           String caracteristica = sc nextLine();
            System.out.println("caracteristica: " + caracteristica);
-     //Este gurpo de comandos es para que el usuario ingrese el precio del producto         
+     
+       //Este gurpo de comandos es para que el usuario ingrese el precio del producto         
         System.out.println("Ingresa el precio");
-           String precio = scanner nextLine();
+           String precio = sc nextLine();
         System.out.println("precio: " + precio);
         
+        //Este gurpo de comandos es para que el usuario ingrese la cantidad de stock
         System.out.println("Ingresa la cantidad de Stock");
-           String stock = scanner nextLine();
+           String stock = sc nextLine();
         System.out.println("stock: " + stock);
+   
               
         }
+
+    // Esta conjuento de codgio es para crear un codiog unico por porducto
+         public String generarcodigo(int c){
+        String codigo ="";
+        int cantidad = getProducto().length();
+        if (cantidad > 0){
+        codigo +="PRODUCTO-000"+c;
+        }else{
+        codigo +="PRODUCTO-000"+c;      
+                }
+        return codigo;
+          } 
+         System.out.println("Los cambios se han guardado con exito");
     }
 
    
