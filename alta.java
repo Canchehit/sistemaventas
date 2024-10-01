@@ -14,7 +14,7 @@ public class alta {
           System.out.println("Lista de productos en extistencia");
   
   //Esta funcion nos sirve para seleccionar el producto
-  int producto = 1;
+  int producto = 0;
           switch(producto){
              
               case 1:
@@ -75,7 +75,79 @@ public class alta {
         return codigo;
           } 
          System.out.println("Los cambios se han guardado con exito");
+         
     }
+ public baja {
+public static void main(String[] args) {
+          Scanner sc = new Scanner(System.in);
+          System.out.println("Lista de productos en extistencia");
+int producto = 0;
+          switch(producto){
+             
+              case 1:
+              System.out.println("Coca-Cola Original");
+              break;
+              case 2: 
+              System.out.println("Coca-Cola Zero");
+              break;
+              case 3: 
+              System.out.println("Coca-Cola Light");
+              break;
+              case 4: 
+              System.out.println("Sprite");
+              break;
+              case 5: 
+              System.out.println("Fanta");
+              break;
+              case 6: 
+              System.out.println("powerade");
+              break;
+              case 7: 
+              System.out.println("monster energy");
+              break;
+              default: 
+              System.out.println("No corresponde a ningun producto");
+              break;
+}
+              System.out.println("El producto escogido es:"+ producto);
+
+              System.out.println("Desar borrar el producto escriba 1 si si o 2 si no:");
+    int num = 0 ;         
+if (num == 1){
+boolean porducto;
+    
+    if (producto) {
+            return ResponseEntity.ok("Porducto eliminado con éxito");
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Porducto no encontraado o no se puede eliminar");
+        }
+    
+
+}else{
+System.out.println("No se borro ningun porducto ");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
    
     
