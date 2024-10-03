@@ -40,6 +40,8 @@ public class Alertas {
                   System.out.println(" Ingresa el numero del puento de orden:"+punto);
                   System.out.println(" Cantidad de stock bajo");                    
                        }else{ 
+                if (cantidad == punto)
+            
                          System.out.println(" Ingresa la cantida de porductos a vender :"+cantidad);
                   System.out.println(" Ingresa el numero del puento de orden:"+punto);
                   System.out.println(" Cantidad de stock bueno");
@@ -54,6 +56,8 @@ public class Alertas {
                   System.out.println(" Ingresa el numero del puento de orden:"+punto);
                   System.out.println(" Cantidad de stock bajo");                    
                        }else{ 
+                    if (cantidad == punto)
+                
                          System.out.println(" Ingresa la cantida de porductos a vender :"+cantidad);
                   System.out.println(" Ingresa el numero del puento de orden:"+punto);
                   System.out.println(" Cantidad de stock bueno");
@@ -64,10 +68,14 @@ public class Alertas {
                     System.out.println("cantida de stock:");
                     System.out.println("1000");
                     if (cantidad <= punto){
+                       
+                    
                   System.out.println(" Ingresa la cantida de porductos a vender :"+cantidad);
                   System.out.println(" Ingresa el numero del puento de orden:"+punto);
                   System.out.println(" Cantidad de stock bajo");                    
                        }else{ 
+                        if (cantidad == punto)
+                    
                          System.out.println(" Ingresa la cantida de porductos a vender :"+cantidad);
                   System.out.println(" Ingresa el numero del puento de orden:"+punto);
                   System.out.println(" Cantidad de stock bueno");
@@ -79,10 +87,14 @@ public class Alertas {
                         System.out.println("600");
             // este if nos sierve para crear un una alerta              
                         if (cantidad <= punto){
+                        
+                        
                   System.out.println(" Ingresa la cantida de porductos a vender :"+cantidad);
                   System.out.println(" Ingresa el numero del puento de orden:"+punto);
                   System.out.println(" Cantidad de stock bajo");                    
                        }else{ 
+                            if (cantidad == punto)
+                        
                          System.out.println(" Ingresa la cantida de porductos a vender :"+cantidad);
                   System.out.println(" Ingresa el numero del puento de orden:"+punto);
                   System.out.println(" Cantidad de stock bueno");
@@ -97,6 +109,8 @@ public class Alertas {
                   System.out.println(" Ingresa el numero del puento de orden:"+punto);
                   System.out.println(" Cantidad de stock bajo");                    
                        }else{ 
+                               if (cantidad == punto)
+                           
                          System.out.println(" Ingresa la cantida de porductos a vender :"+cantidad);
                   System.out.println(" Ingresa el numero del puento de orden:"+punto);
                   System.out.println(" Cantidad de stock bueno");
@@ -111,6 +125,8 @@ public class Alertas {
                   System.out.println(" Ingresa el numero del puento de orden:"+punto);
                   System.out.println(" Cantidad de stock bajo");                    
                        }else{ 
+                                    if (cantidad == punto)
+                                
                          System.out.println(" Ingresa la cantida de porductos a vender :"+cantidad);
                   System.out.println(" Ingresa el numero del puento de orden:"+punto);
                   System.out.println(" Cantidad de stock bueno");
@@ -127,6 +143,8 @@ public class Alertas {
     }catch (IOException exception) {
             exception.printStackTrace(System.out);
         }
+    
+  
         
         
     
