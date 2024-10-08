@@ -5,8 +5,14 @@ public class Historial {
   
      public static void main(String[] args) {
           Scanner sc = new Scanner(System.in);
-          System.out.println("ingresa el codigo del producto");
-    
+          System.out.println("ingresa un numero del 1 al 6 para seleccionar el producto");
+     System.out.println("1 CocaColaOriginal");
+      System.out.println("2 CocaColaZero ");
+      System.out.println("3 CocaColaLight ");
+       System.out.println("4 Sprite ");
+        System.out.println("5 Powerade ");
+         System.out.println("6 monsterEnergy ");
+         
     //Esta funcion nos sirve para seleccionar el producto
   int producto = 0;
   char usuario = 0;
