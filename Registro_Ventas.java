@@ -1,7 +1,10 @@
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class Registro_Ventas {
@@ -16,17 +19,9 @@ public class Registro_Ventas {
         int powerade = 1415;
    
       
-    }
-     public class ArchivoTexto {
-    public static void main(String[] args) {
-        crearArchivoDeTexto();
-    }
 
-    private static void crearArchivoDeTexto() {
-        Scanner sc = new Scanner(System.in);
-        File archivo = new File("archivo.txt");
 
-        // Esta funcion if nos sirve para seleccionar el producto por su codigo unico
+       // Esta funcion if nos sirve para seleccionar el producto por su codigo unico
      try {   
           int fecha = 0;
          int cantidad = 0;
@@ -40,7 +35,7 @@ public class Registro_Ventas {
                   System.out.println("Ingresa la fecha:"+fecha);
                                        System.out.println("producto vendido con exito");
                        }else{ 
-                          System.out.println("Error no existe esa cantidad");
+                          System.out.println("No exite ese producto");
                           }     
         }else{
             if (codigo == 456){
@@ -52,7 +47,7 @@ public class Registro_Ventas {
                       System.out.println("Ingresa la fecha:"+fecha);
                                        System.out.println("producto vendido con exito");
                            }else{ 
-                              System.out.println("Error no existe esa cantidad");    
+                              System.out.println("No exite ese producto");    
                               }     
             }else{
                 if (codigo == 789){
@@ -64,7 +59,7 @@ public class Registro_Ventas {
                           System.out.println("Ingresa la fecha:"+fecha);
                                        System.out.println("producto vendido con exito");
                                }else{ 
-                                  System.out.println("Error no existe esa cantidad");    
+                                  System.out.println("No exite ese producto");    
                                   }  
                 }else{
                     if (codigo == 1011){
@@ -77,7 +72,7 @@ public class Registro_Ventas {
                               System.out.println("Ingresa la fecha:"+fecha);
                                        System.out.println("producto vendido con exito");
                                    }else{ 
-                                      System.out.println("Error no existe esa cantidad");    
+                                      System.out.println("No exite ese producto");    
                                       }                          
                     }else{
                         if (codigo == 1213){
@@ -89,7 +84,7 @@ public class Registro_Ventas {
                                   System.out.println("Ingresa la fecha:"+fecha);
                                        System.out.println("producto vendido con exito");
                                        }else{ 
-                                          System.out.println("Error no existe esa cantidad");    
+                                          System.out.println("No exite ese producto");    
                                           }
                         }else{
                             if (codigo == 1415){
@@ -111,12 +106,9 @@ public class Registro_Ventas {
             }
         }
 
-        sc.close();
-    }catch (IOException exception) {
-            exception.printStackTrace(System.out);
-        }
     
-   
+    } 
+         System.out.println("Venta Realizarda");    
 }
     
 }
