@@ -9,7 +9,7 @@ public class PedidoProductos {
         Scanner sc = new Scanner(System.in);        
 
         // Capturar los datos del usuario
-        System.out.println("Seleccione el número del producto del 1 al 7:");
+        System.out.println("Seleccione el número del producto del 1 al 6:");
         int producto = sc.nextInt();  // Captura la opción de producto
 
         System.out.println("Ingresa el precio:");
@@ -24,45 +24,19 @@ public class PedidoProductos {
 
         // Calcular el total
         int total = cantidad * precio;
-
+     String respuesta ; 
         // Mostrar información del producto seleccionado
         switch (producto) {
             case 1:
                 System.out.println("Producto seleccionado: Coca-Cola Original");
-                break;
-            case 2:
-                System.out.println("Producto seleccionado: Coca-Cola Zero");
-                break;
-            case 3:
-                System.out.println("Producto seleccionado: Sprite");
-                break;
-            case 4:
-                System.out.println("Producto seleccionado: Coca-Cola Light");
-                break;
-            case 5:
-                System.out.println("Producto seleccionado: Fanta");
-                break;
-            case 6:
-                System.out.println("Producto seleccionado: Monster Energy");
-                break;
-            case 7:
-                System.out.println("Producto seleccionado: Powerade");
-                break;
-            default:
-                System.out.println("No corresponde a ningún producto");
-                return;  // Termina el programa si no hay producto válido
-        }
-
-        // Mostrar detalles del pedido
-        System.out.println("Fecha de Creación: " + fechaDeCreacion);
+                System.out.println("Fecha de Creación: " + fechaDeCreacion);
         System.out.println("Fecha de Entrega: " + fechaEntrega);
         System.out.println("Cantidad: " + cantidad);
         System.out.println("Total: " + total);
-
         // Preguntar si desea cancelar el pedido
         System.out.println("¿Desea cancelar el pedido? (s/n)");
         sc.nextLine();  // Consumir el salto de línea pendiente
-        String respuesta = sc.nextLine();
+         respuesta = sc.nextLine();
 
         if (respuesta.equalsIgnoreCase("s")) {
             System.out.println("Usted ha respondido que SÍ, el pedido será cancelado.");
@@ -71,5 +45,109 @@ public class PedidoProductos {
         }
 
         sc.close();  // Cerrar el escáner
+                break;
+            case 2:
+                System.out.println("Producto seleccionado: Coca-Cola Zero");
+                System.out.println("Fecha de Creación: " + fechaDeCreacion);
+        System.out.println("Fecha de Entrega: " + fechaEntrega);
+        System.out.println("Cantidad: " + cantidad);
+        System.out.println("Total: " + total);
+        // Preguntar si desea cancelar el pedido
+        System.out.println("¿Desea cancelar el pedido? (s/n)");
+        sc.nextLine();  
+         respuesta = sc.nextLine();
+
+        if (respuesta.equalsIgnoreCase("s")) {
+            System.out.println("Usted ha respondido que SÍ, el pedido será cancelado.");
+        } else {
+            System.out.println("Usted ha respondido que NO, el pedido sigue en proceso.");
+        }
+
+        sc.close();  // Cerrar el escáner
+                break;
+            case 3:
+                System.out.println("Producto seleccionado: Sprite");
+                System.out.println("Fecha de Creación: " + fechaDeCreacion);
+        System.out.println("Fecha de Entrega: " + fechaEntrega);
+        System.out.println("Cantidad: " + cantidad);
+        System.out.println("Total: " + total);
+        // Preguntar si desea cancelar el pedido
+        System.out.println("¿Desea cancelar el pedido? (s/n)");
+        sc.nextLine();  // Consumir el salto de línea pendiente
+         respuesta = sc.nextLine();
+
+        if (respuesta.equalsIgnoreCase("s")) {
+            System.out.println("Usted ha respondido que SÍ, el pedido será cancelado.");
+        } else {
+            System.out.println("Usted ha respondido que NO, el pedido sigue en proceso.");
+        }
+
+        sc.close();  // Cerrar el escáner
+                break;
+            case 4:
+                System.out.println("Producto seleccionado: Coca-Cola Light");
+                System.out.println("Fecha de Creación: " + fechaDeCreacion);
+        System.out.println("Fecha de Entrega: " + fechaEntrega);
+        System.out.println("Cantidad: " + cantidad);
+        System.out.println("Total: " + total);
+        // Preguntar si desea cancelar el pedido
+        System.out.println("¿Desea cancelar el pedido? (s/n)");
+        sc.nextLine();  // Consumir el salto de línea pendiente
+         respuesta = sc.nextLine();
+
+        if (respuesta.equalsIgnoreCase("s")) {
+            System.out.println("Usted ha respondido que SÍ, el pedido será cancelado.");
+        } else {
+            System.out.println("Usted ha respondido que NO, el pedido sigue en proceso.");
+        }
+
+        sc.close();  // Cerrar el escáner
+                break;
+           
+            case 5:
+                System.out.println("Producto seleccionado: Monster Energy");
+                System.out.println("Fecha de Creación: " + fechaDeCreacion);
+        System.out.println("Fecha de Entrega: " + fechaEntrega);
+        System.out.println("Cantidad: " + cantidad);
+        System.out.println("Total: " + total);
+        // Preguntar si desea cancelar el pedido
+        System.out.println("¿Desea cancelar el pedido? (s/n)");
+        sc.nextLine();  // Consumir el salto de línea pendiente
+         respuesta = sc.nextLine();
+
+        if (respuesta.equalsIgnoreCase("s")) {
+            System.out.println("Usted ha respondido que SÍ, el pedido será cancelado.");
+        } else {
+            System.out.println("Usted ha respondido que NO, el pedido sigue en proceso.");
+        }
+
+        sc.close();  // Cerrar el escáner
+                break;
+            case 6:
+                System.out.println("Producto seleccionado: Powerade");
+                System.out.println("Fecha de Creación: " + fechaDeCreacion);
+        System.out.println("Fecha de Entrega: " + fechaEntrega);
+        System.out.println("Cantidad: " + cantidad);
+        System.out.println("Total: " + total);
+        // Preguntar si desea cancelar el pedido
+        System.out.println("¿Desea cancelar el pedido? (s/n)");
+        sc.nextLine();  // Consumir el salto de línea pendiente
+         respuesta = sc.nextLine();
+
+        if (respuesta.equalsIgnoreCase("s")) {
+            System.out.println("Usted ha respondido que SÍ, el pedido será cancelado.");
+        } else {
+            System.out.println("Usted ha respondido que NO, el pedido sigue en proceso.");
+        }
+
+        sc.close();  
+                break;
+            default:
+                System.out.println("No corresponde a ningún producto");
+                return;  
+        }
+
+     
     }
+}
 }
