@@ -27,6 +27,11 @@ public class Modificación {
               System.out.println("Es una vebida eneregetica");
               
   File M = new File("archivo_texto.txt");
+   System.out.println("Seleccione 1 para Modificar"); 
+   int opcion = 0;
+   switch (opcion) {
+       
+       case 1:
        try {
                         java.io.FileWriter fw = new java.io.FileWriter(M);
                         BufferedWriter bw = new BufferedWriter(fw);
@@ -44,5 +49,6 @@ public class Modificación {
                     }
     
 
+}
 }
 }
