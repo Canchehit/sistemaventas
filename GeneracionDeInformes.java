@@ -50,7 +50,8 @@ public class GeneracionDeInformes {
                             System.out.println("1000");
                      System.out.println( "Valor de Stock: 500");
           
-                      System.out.println( "Seleccione el numero 1 para crear el registro");
+                      System.out.println( "Seleccione el numero 1 para ver los registro");
+                      System.out.println( "Seleccione el numero 2 para agregar el registro");
          File G = new File("archivo.CSV");              
        int opcion = 0;             
        switch (opcion) {
@@ -65,6 +66,16 @@ public class GeneracionDeInformes {
                         bw.write("Sodas ,Coca-Cola Light,cantida de stock,600,Valor,600\n");
                         bw.write("Enregisantes,powerade,cantida de stock,1000,Valor,400\n");
                         bw.write("Enregisantes,monster energy,cantida de stock,1000,Valor,500\n");
+                        bw.close();
+                    } catch (IOException ex) {
+                        Logger.getLogger(EscrituraDeArchivosSA.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    break;
+            case 2:
+                    try {
+                        FileWriter fw = new FileWriter(G, true);
+                        BufferedWriter bw = new BufferedWriter(fw);
+                        bw.write("Categoria|Producto|Stock|Cantidad|Valor|Cantidad\n");
                         bw.close();
                     } catch (IOException ex) {
                         Logger.getLogger(EscrituraDeArchivosSA.class.getName()).log(Level.SEVERE, null, ex);
