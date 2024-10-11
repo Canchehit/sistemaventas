@@ -5,6 +5,9 @@ public class Historial {
   
      public static void main(String[] args) {
           Scanner sc = new Scanner(System.in);
+           System.out.println("Ingrese su rol en la empresa");
+           String usuario = null;   
+   
           System.out.println("ingresa un numero del 1 al 6 para seleccionar el producto");
      System.out.println("1 CocaColaOriginal");
       System.out.println("2 CocaColaZero ");
@@ -15,7 +18,7 @@ public class Historial {
          
     //Esta funcion nos sirve para seleccionar el producto
   int producto = 0;
-  char usuario = 0;
+ 
               
           switch(producto){
              
@@ -75,7 +78,10 @@ public class Historial {
           
           
         }
+
+   
+    }
     
   
     
-}
+
