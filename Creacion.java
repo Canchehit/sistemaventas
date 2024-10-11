@@ -25,7 +25,7 @@ public class Creacion {
         System.out.println("5 Powerade ");
          System.out.println("6 monsterEnergy "); 
           System.out.println("Ingrese el número 1 para crear un pedido"); 
-          
+                System.out.println("Ingrese el número 2 para Agregar un pedido"); 
           
      File E = new File("archivo_texto.txt");       
    int opcion = 0;
@@ -49,11 +49,19 @@ public class Creacion {
                     } catch (IOException ex) {
                         Logger.getLogger(EscrituraDeArchivosSA.class.getName()).log(Level.SEVERE, null, ex);
                     
+                    }break;
+  case 2:
+                    try {
+                        java.io.FileWriter fw = new java.io.FileWriter(E, true);
+                        BufferedWriter bw = new BufferedWriter(fw);
+                        bw.write("producto|Proveedor|producto|cantidad|Precio|Total \n");
+                        bw.close();
+                    } catch (IOException ex) {
+                        Logger.getLogger(EscrituraDeArchivosSA.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                     break;
-
        
  
    }
-}
 }
 }
