@@ -29,8 +29,8 @@ System.out.println("Enregisantes");
               System.out.println("powerade");
               
     System.out.println("Seleccione una de las opcciones:");         
-  System.out.println("1. Escribir registro");
-    
+  System.out.println("1. Ver los registro");
+   System.out.println("2. Agregar registro");  
    
   int opcion = 0;
         File A = new File("archivo_texto.txt");
