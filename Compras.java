@@ -1,7 +1,12 @@
-
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -10,8 +15,8 @@ import java.util.logging.Logger;
 public class Compras {
      public static void main(String[] args) {
      Scanner sc = new Scanner(System.in);
-          System.out.println("Ingrese el numero 1 para generar un Movimiento");
-    
+          System.out.println("Ingrese el numero 1 para ver las compras realizadas");
+          System.out.println("Ingrese el numero 2 agregar una nueva compra");
           
           
           
@@ -36,6 +41,16 @@ public class Compras {
                     } catch (IOException ex) {
                         Logger.getLogger(EscrituraDeArchivosSA.class.getName()).log(Level.SEVERE, null, ex);
                     
+                   } break;
+               case 2:
+                    try {
+                        java.io.FileWriter fw = new java.io.FileWriter(E, true);
+                        BufferedWriter bw = new BufferedWriter(fw);
+                        bw.write("Producto|Proveedor|producto de compra|Cantidad|precio|Total|código|Fecha\n");
+                        bw.close();
+                    } catch (IOException ex) {
+                        Logger.getLogger(EscrituraDeArchivosSA.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                     break;
 
           
@@ -49,7 +64,7 @@ public class Compras {
           
           
           
-}
+
 }
      }
 }
