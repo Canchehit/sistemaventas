@@ -27,7 +27,8 @@ public class Modificación {
               System.out.println("Es una vebida eneregetica");
               
   File M = new File("archivo_texto.txt");
-   System.out.println("Seleccione 1 para Modificar"); 
+   System.out.println("Seleccione 1 para ver las modificaciones"); 
+   System.out.println("Seleccione 2 para Modificar"); 
    int opcion = 0;
    switch (opcion) {
        
@@ -46,8 +47,17 @@ public class Modificación {
                         bw.close();
                     } catch (IOException ex) {
                         Logger.getLogger(EscrituraDeArchivosSA.class.getName()).log(Level.SEVERE, null, ex);
+                    }break;
+    case 2:
+                    try {
+                        java.io.FileWriter fw = new java.io.FileWriter(M, true);
+                        BufferedWriter bw = new BufferedWriter(fw);
+                        bw.write("Producto|Descripccion|cantidad de stock \n");
+                        bw.close();
+                    } catch (IOException ex) {
+                        Logger.getLogger(EscrituraDeArchivosSA.class.getName()).log(Level.SEVERE, null, ex);
                     }
-    
+                    break;
 
 }
 }
