@@ -53,6 +53,18 @@ System.out.println("Enregisantes");
                         Logger.getLogger(EscrituraDeArchivosSA.class.getName()).log(Level.SEVERE, null, ex);
                     }
                     break;
+                   case 2: 
+                    try {
+                        java.io.FileWriter fw = new java.io.FileWriter(A);
+                        BufferedWriter bw = new BufferedWriter(fw);
+                        
+                        bw.write("Categorias|Producto|Descripccion|Producto|Cantidad de Stock\n");
+                      
+                        bw.close();
+                    } catch (IOException ex) {
+                        Logger.getLogger(EscrituraDeArchivosSA.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    break;
   
         }
     }
